@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ahorcado</title>
+		<link href="http://fonts.cdnfonts.com/css/sf-pixelate" rel="stylesheet" />
+		<link rel="stylesheet" href="styles.css" />
+		<script type="module" src="script.js" defer></script>
+	</head>
+	<body>
+		<header class="header">
+			<a href="/" class="logo"><span>alura</span> <span>latam</span></a>
+		</header>
+		<div class="start">
+			<h1 class="title">Ahorcado</h1>
+			<button class="btn__start" id="start">Jugar</button>
+		</div>
+		<div class="playing" id="playing">
+			<canvas id="hanged"></canvas>
+			<div id="usedLetters"></div>
+			<div id="word__container"></div>
+
+			<div class="keyboard" id="keyboard">
+				<div class="row">
+					<button class="letter__btn">q</button>
+					<button class="letter__btn">w</button>
+					<button class="letter__btn">e</button>
+					<button class="letter__btn">r</button>
+					<button class="letter__btn">t</button>
+					<button class="letter__btn">y</button>
+					<button class="letter__btn">u</button>
+					<button class="letter__btn">i</button>
+					<button class="letter__btn">o</button>
+					<button class="letter__btn">p</button>
+				</div>
+				<div class="row">
+					<button class="letter__btn">a</button>
+					<button class="letter__btn">s</button>
+					<button class="letter__btn">d</button>
+					<button class="letter__btn">f</button>
+					<button class="letter__btn">g</button>
+					<button class="letter__btn">h</button>
+					<button class="letter__btn">j</button>
+					<button class="letter__btn">k</button>
+					<button class="letter__btn">l</button>
+					<button class="letter__btn">ñ</button>
+				</div>
+				<div class="row">
+					<button class="letter__btn">z</button>
+					<button class="letter__btn">x</button>
+					<button class="letter__btn">c</button>
+					<button class="letter__btn">v</button>
+					<button class="letter__btn">b</button>
+					<button class="letter__btn">n</button>
+					<button class="letter__btn">m</button>
+				</div>
+			</div>
+		</div>
+		<div class="screen__modal" id="screenModal">
+			<div class="modal" id="modal"></div>
+		</div>
+	</body>
+</html>
